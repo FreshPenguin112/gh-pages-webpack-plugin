@@ -31,7 +31,7 @@ GhPagesWebpackPlugin.prototype.apply = function(compiler, callback) {
 
         // get absolute path if it's relative path
         if(!isAbsolute(dist)) {
-            dist = path.join(this.options.context, dist);
+            dist = path.join(this.options, dist);
         }
 
         console.log('\n' + dist + ' is being publish');
