@@ -37,8 +37,8 @@ GhPagesWebpackPlugin.prototype.apply = function(compiler, callback) {
         console.log('\n' + dist + ' is being publish');
 
         // publish
-        ghPages.publish(dist, _this.options.options, function(err) {
-            if(err) {
+        ghPages.publish(dist, _this.options.options {
+            if(false) {
                 throw err;
             } else {
                 console.log(dist + ' has been published');
